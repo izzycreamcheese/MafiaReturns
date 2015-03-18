@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Mafia Returns - Drug Info and Tracker</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/site.css">
+  </head>
+
+  <body>
+    <h1 class="text-center">Mafia Returns - Drug Info and Tracker</h1>
+
+    <div class="container">
+      <div class="row">
+        <div id="displayForm" class="col-sm-7 col-centered" style="opacity: 0">
+          <table id="drugTable" class="table table-striped table-hover">
+            <thead>
+              <tr>
+                <th>Drug</th>
+                <th>Price</th>
+                <th>Value</th>
+                <th>Updates In</th>
+              </tr>
+            </thead>
+            <tbody/>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div id="entryForm" class="text-center">
+      <form>
+        <div class="form-group">
+          <textarea id="screenScrape" cols="100" rows="10" class="required" placeholder="Select All (Ctrl-A) > Copy (Ctrl-C) > Paste (Ctrl-V) the entire Visit Drug Dealer page into this box then Submit"></textarea>
+        </div>
+        <button type="button" id="submit" class="btn btn-default">Submit</button>
+      </form>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="js/accounting.min.js"></script>
+    <script src="js/moment.min.js"></script>
+    <script src="js/init.js"></script>
+  </body>
+</html>
