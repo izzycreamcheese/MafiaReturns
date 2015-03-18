@@ -17,6 +17,10 @@
 
     <div class="container">
       <div class="row">
+        <div class="text-center">
+          <h2 id="city" />
+        </div>
+
         <div id="displayForm" class="col-sm-7 col-centered" style="opacity: 0">
           <table id="drugTable" class="table table-striped table-hover">
             <thead>
@@ -30,10 +34,12 @@
             <tbody/>
           </table>
         </div>
+
+        <h6 id="time" class="text-center" />
       </div>
     </div>
 
-    <div id="entryForm" class="text-center">
+    <div id="entryForm" class="text-center" style="margin-top: 10px">
       <form>
         <div class="form-group">
           <textarea id="screenScrape" cols="100" rows="10" class="required" placeholder="Select All (Ctrl-A) > Copy (Ctrl-C) > Paste (Ctrl-V) the entire Visit Drug Dealer page into this box then Submit"></textarea>

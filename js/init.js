@@ -298,6 +298,9 @@ var MAFIA = function () {
   var setupDisplayForm = function () {
     $('#screenScrape').val('');
 
+    $('#city').text(_currentArea + ', ' + _currentCity);
+    $('#time').text('Data accurate as of ' + _gameTime.format("MMM D - HH:mm:ss"));
+
     var tableBody = $('#drugTable tbody');
 
     var dataKeys = Object.keys(_drugs);
