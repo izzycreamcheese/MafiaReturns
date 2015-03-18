@@ -286,11 +286,11 @@ var MAFIA = function () {
       _drugs[currentDrug] = drugObject;
     }
 
-    console.log(_submitter);
-    console.log(_currentArea);
-    console.log(_currentCity);
-    console.log(_gameTime.format("dddd, MMMM Do YYYY, h:mm:ss a"));
-    console.log(_drugs);
+    //console.log(_submitter);
+    //console.log(_currentArea);
+    //console.log(_currentCity);
+    //console.log(_gameTime.format("dddd, MMMM Do YYYY, h:mm:ss a"));
+    //console.log(_drugs);
 
     setupDisplayForm();
   };
@@ -302,8 +302,6 @@ var MAFIA = function () {
 
     var dataKeys = Object.keys(_drugs);
     $(dataKeys).each(function () {
-
-      console.log(this);
       var currentDrug = this.toString();
       var drug = _drugs[this.toString()];
 
